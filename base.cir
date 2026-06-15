@@ -1,0 +1,19 @@
+* Simple circuit for Bayesian optimization demo
+
+* Input voltage
+V1 N001 0 DC 5
+
+* Load resistor (THIS WILL BE OPTIMIZED)
+R1 N003 N002 100
+
+* Small test network
+R2 N002 0 1k
+R3 N003 N001 1k
+
+* Simple current measurement point
+* Current through R1 is used in optimization
+
+.tran 0 1m
+
+.backanno
+.end
